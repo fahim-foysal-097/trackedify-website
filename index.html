@@ -56,7 +56,7 @@
         <!-- REPORT BUG floating button -->
         <a id="report-btn" class="btn btn-glow btn-report"
             href="https://github.com/fahim-foysal-097/trackedify/issues/new?template=bug_report.md" target="_blank"
-            rel="noopener"><i class="bi bi-bug-fill me-1"></i>Report bugs</a>
+            rel="noopener" aria-label="Report a bug on GitHub"><i class="bi bi-bug-fill me-1"></i>Report bugs</a>
 
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -75,15 +75,22 @@
 
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#gallery">Screenshots</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#requirements">System Requirements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features"
+                                aria-label="View features section">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery"
+                                aria-label="View screenshots">Screenshots</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about"
+                                aria-label="Learn about Trackedify">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#download"
+                                aria-label="Download the app">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#requirements"
+                                aria-label="View system requirements">System Requirements</a></li>
                     </ul>
                     <ul class="navbar-nav ms-auto m-1">
-                        <li class="nav-item"><a class="nav-link" href="index.html"><strong>Home</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="releases.html"><strong>Release Notes</strong></a>
+                        <li class="nav-item"><a class="nav-link" href="index.html"
+                                aria-label="Go to home page"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="releases.html"
+                                aria-label="View release notes"><strong>Release Notes</strong></a>
                         </li>
                     </ul>
                 </div>
@@ -99,23 +106,31 @@
                         one-tap add.</p>
 
                     <div class="row g-3">
-                        <div class="mt-4 m-0 d-flex gap-4">
-                            <a href="#download" class="btn btn-glow btn-lg">Download APP</a>
-                            <a href="#features" class="btn btn-outline-light btn-lg">See features</a>
+                        <div class="mt-4 m-0 d-flex gap-3 flex-wrap">
+                            <a href="#download" class="btn btn-glow btn-lg"
+                                aria-label="Download Trackedify app">Download APP</a>
+                            <a href="#features" class="btn btn-outline-light btn-lg" aria-label="View features">See
+                                features</a>
                         </div>
                     </div>
 
-                    <ul class="mt-4 small text-muted">
-                        <li>Privacy-friendly: completely local data.</li>
-                        <li>Lightweight: small size and fast app.</li>
-                        <li>Quick Insights: Beautiful charts and insights.</li>
+                    <ul class="mt-4 small text-muted list-unstyled" style="line-height: 2;">
+                        <li class="mb-2"><i class="bi bi-shield-check me-2"
+                                style="color: rgba(var(--accent2), 1);"></i>Privacy-friendly: completely local data.
+                        </li>
+                        <li class="mb-2"><i class="bi bi-lightning-charge me-2"
+                                style="color: rgba(var(--accent3), 1);"></i>Lightweight: small size and fast app.</li>
+                        <li class="mb-2"><i class="bi bi-graph-up me-2"
+                                style="color: rgba(var(--accent1), 1);"></i>Quick Insights: Beautiful charts and
+                            insights.</li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
                     <div class="device-card shadow-soft">
-                        <img id="heroImage" src="assets/screenshots/ss_home.jpg" alt="Trackedify screenshot"
-                            class="screenshot img-fluid">
+                        <img id="heroImage" src="assets/screenshots/ss_home.jpg"
+                            alt="Trackedify app home screen showing expense tracking interface"
+                            class="screenshot img-fluid" loading="eager">
                     </div>
                 </div>
             </div>
@@ -132,6 +147,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent1), 1);">
+                                    <i class="bi bi-tag-fill"></i>
+                                </div>
                                 <h5 class="card-title">Track & Categorize</h5>
                                 <p class="card-text text-muted">Track & categorize your expenses easily with custom
                                     categories.</p>
@@ -142,6 +160,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
                                 <h5 class="card-title">Insights & Charts</h5>
                                 <p class="card-text text-muted">Insights and colorful charts for smarter decisions.
                                 </p>
@@ -152,6 +173,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
+                                    <i class="bi bi-palette-fill"></i>
+                                </div>
                                 <h5 class="card-title">Clean UI</h5>
                                 <p class="card-text text-muted">Simple, clean, and intuitive user interface with many
                                     themes.</p>
@@ -162,6 +186,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent1), 1);">
+                                    <i class="bi bi-wifi-off"></i>
+                                </div>
                                 <h5 class="card-title">Offline Mode</h5>
                                 <p class="card-text text-muted">Works fully offline - your data stays on your device.
                                 </p>
@@ -173,6 +200,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
+                                    <i class="bi bi-calculator-fill"></i>
+                                </div>
                                 <h5 class="card-title">Built-in Calculator</h5>
                                 <p class="card-text text-muted">Calculate expenses without leaving the app.</p>
                             </div>
@@ -182,6 +212,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
+                                    <i class="bi bi-download"></i>
+                                </div>
                                 <h5 class="card-title">Import & Export</h5>
                                 <p class="card-text text-muted">Import & export your database effortlessly.</p>
                             </div>
@@ -191,6 +224,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent1), 1);">
+                                    <i class="bi bi-sticky-fill"></i>
+                                </div>
                                 <h5 class="card-title">Add Notes</h5>
                                 <p class="card-text text-muted">Attach notes to any expense for more context.</p>
                             </div>
@@ -200,6 +236,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
+                                    <i class="bi bi-lock-fill"></i>
+                                </div>
                                 <h5 class="card-title">App Locker</h5>
                                 <p class="card-text text-muted">Protect your app with a PIN and make your expenses
                                     private.</p>
@@ -210,6 +249,9 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
+                                    <i class="bi bi-mic-fill"></i>
+                                </div>
                                 <h5 class="card-title">Voice Commands</h5>
                                 <p class="card-text text-muted">Add expenses easily with voice commands.</p>
                             </div>
@@ -301,9 +343,12 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="download-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent1), 1);">
+                                    <i class="bi bi-phone-fill"></i>
+                                </div>
                                 <h5 class="card-title">arm64-v8a</h5>
                                 <p class="card-text small text-muted">Recommended for modern phones.</p>
-                                <a id="btn-arm64" class="btn btn-download w-100"
+                                <a id="btn-arm64" class="btn btn-download w-100" aria-label="Download arm64-v8a APK"
                                     href="https://github.com/fahim-foysal-097/trackedify/releases/download/v1.8.0/trackedify-v1.8.0-arm64-v8a.apk">Download
                                     arm64-v8a</a>
                             </div>
@@ -313,9 +358,12 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="download-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
+                                    <i class="bi bi-device-hdd"></i>
+                                </div>
                                 <h5 class="card-title">armeabi-v7a</h5>
                                 <p class="card-text small text-muted">Older ARM 32-bit devices.</p>
-                                <a id="btn-armeabi" class="btn btn-download w-100"
+                                <a id="btn-armeabi" class="btn btn-download w-100" aria-label="Download armeabi-v7a APK"
                                     href="https://github.com/fahim-foysal-097/trackedify/releases/download/v1.8.0/trackedify-v1.8.0-armeabi-v7a.apk">Download
                                     armeabi-v7a</a>
                             </div>
@@ -325,9 +373,12 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="download-card card">
                             <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
+                                    <i class="bi bi-cpu-fill"></i>
+                                </div>
                                 <h5 class="card-title">x86_64</h5>
                                 <p class="card-text small text-muted">Emulators & other devices.</p>
-                                <a id="btn-x86" class="btn btn-download w-100"
+                                <a id="btn-x86" class="btn btn-download w-100" aria-label="Download x86_64 APK"
                                     href="https://github.com/fahim-foysal-097/trackedify/releases/download/v1.8.0/trackedify-v1.8.0-x86_64.apk">Download
                                     x86_64</a>
                             </div>
@@ -351,7 +402,7 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="card system-card h-100">
                             <div class="card-body">
-                                <h6 class="card-title mb-2"><i class="bi bi-phone-fill me-1"></i>Platform</h6>
+                                <h6 class="card-title mb-2"><i class="bi bi-phone-fill"></i>Platform</h6>
                                 <p class="card-text small text-muted">Android (APK). Not available for iOS.</p>
                             </div>
                         </div>
@@ -360,7 +411,7 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="card system-card h-100">
                             <div class="card-body">
-                                <h6 class="card-title mb-2"><i class="bi bi-android2 me-1"></i>Minimum OS</h6>
+                                <h6 class="card-title mb-2"><i class="bi bi-android2"></i>Minimum OS</h6>
                                 <p class="card-text small text-muted">Android 6.0 (Marshmallow) or higher *</p>
                             </div>
                         </div>
@@ -369,7 +420,7 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="card system-card h-100">
                             <div class="card-body">
-                                <h6 class="card-title mb-2"><i class="bi bi-cpu-fill me-1"></i>Recommended</h6>
+                                <h6 class="card-title mb-2"><i class="bi bi-cpu-fill"></i>Recommended</h6>
                                 <p class="card-text small text-muted">Android 10.0+ on modern hardware for best
                                     experience.
                                 </p>
@@ -380,7 +431,7 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="card system-card h-100">
                             <div class="card-body">
-                                <h6 class="card-title mb-2"><i class="bi bi-hdd-stack-fill me-1"></i>Storage</h6>
+                                <h6 class="card-title mb-2"><i class="bi bi-hdd-stack-fill"></i>Storage</h6>
                                 <p class="card-text small text-muted">~30-40 MB free for install; additional space for
                                     local DB and backups.</p>
                             </div>
