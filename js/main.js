@@ -4,7 +4,7 @@
     const LINKS = {
         arm64: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-arm64-v8a.apk`,
         armeabi: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-armeabi-v7a.apk`,
-        x86: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-x86_64.apk`,
+        universal: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-universal.apk`,
     };
 
     // slideshow state (gallery modal)
@@ -38,7 +38,7 @@
         const mapping = [
             { id: "btn-arm64", key: "arm64" },
             { id: "btn-armeabi", key: "armeabi" },
-            { id: "btn-x86", key: "x86" },
+            { id: "btn-universal", key: "universal" },
         ];
 
         mapping.forEach(({ id, key }) => {
